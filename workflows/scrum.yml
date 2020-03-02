@@ -1,0 +1,20 @@
+name: "update scrum"
+
+on:
+  project_card:
+    types:
+      - converted
+      - created
+      - deleted
+      - edited
+      - moved
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ignition-is-go/scrum-math-action@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issuePointsLabel: Est
+          prPointsLabel: Act

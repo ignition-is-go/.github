@@ -3,7 +3,7 @@ name: Feature Idea
 about: Suggest an idea for this project
 title: ''
 labels: enhancement
-assignees: kylebjordahl
+assignees: trevorsargent
 
 ---
 
